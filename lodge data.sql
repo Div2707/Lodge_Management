@@ -84,7 +84,7 @@ INSERT INTO `lodge`(`lodge_id`, `lodge_name`, `lodge_contact_number`, `lodge_ema
 		(4,'Northgate Inn','547-876-5422','northgate.inn@gmail.com','https://www.chin23.com/','A 4-mile drive from Conestoga Mall',3,40,1,10,5,'12:00:00','23:00:00');
 		
 	-- insert into rooms table 	
-INSERT INTO `rooms`(`room_id`, `room_number`, `rooms_type_rooms_type_id`, `hotel_hotel_id`)
+INSERT INTO `rooms`(`room_id`, `room_number`, `rooms_type_rooms_type_id`, `lodge_lodge_id`)
  VALUES 
 	(1,1101,1,1),
 	(2,1102,1,1),
@@ -193,7 +193,7 @@ VALUES
 ('21', '15', '21');
 
 -- insert into lodge_services_used_by_guests table 
-INSERT INTO `hotel_services_used_by_guests` (`service_used_id`, `hotel_services_service_id`, `bookings_booking_id`) 
+INSERT INTO `lodge_services_used_by_guests` (`service_used_id`, `lodge_services_service_id`, `bookings_booking_id`) 
 VALUES ('1', '1', '2'),
  ('2', '2', '2'),
  ('3', '3', '2');
